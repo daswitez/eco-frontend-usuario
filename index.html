@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="/" class="logo">
+                <svg viewBox="0 0 50 50" width="40" height="40">
+                    <path fill="#1E5631"
+                        d="M25,2 C12.85,2 3,11.85 3,24 C3,36.15 12.85,46 25,46 C37.15,46 47,36.15 47,24 C47,11.85 37.15,2 25,2 Z M21,35 L13,27 L16,24 L21,29 L34,16 L37,19 L21,35 Z" />
+                </svg>
+                <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--green-forest)">Eco
+                    Acción</span>
+            </a>
+            <div class="nav-links">
+                <a href="/inicio" class="nav-link">Inicio</a>
+                <a href="/proyectos" class="nav-link">Proyectos</a>
+                <a href="/perfil" class="nav-link secondary-link">Mi Perfil</a>
+                <a href="/logout" class="nav-link primary-link">Cerrar Sesión</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="profile-section">
+        <div class="profile-header">
+            <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="profile-picture">
+            <h2 class="profile-name">Juan Pérez</h2>
+            <p class="profile-role">Donador Estrella</p>
+        </div>
+
+        <section class="profile-info">
+            <h3>Información Pública</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">Nombre:</span>
+                    <span class="info-value">Juan Pérez</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email:</span>
+                    <span class="info-value">juan.perez@email.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Teléfono:</span>
+                    <span class="info-value">+591 777-12345</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">País:</span>
+                    <span class="info-value">Bolivia</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Última Donación:</span>
+                    <span class="info-value">$500</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-edit">
+            <h3>Editar Información</h3>
+            <form class="edit-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" value="Juan Pérez">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="juan.perez@email.com">
+
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" value="+591 777-12345">
+
+                <label for="country">País:</label>
+                <input type="text" id="country" name="country" value="Bolivia">
+
+                <button type="submit" class="primary-btn">Guardar Cambios</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Eco Acción - Reforestación para el Futuro</p>
+    </footer>
+
+</body>
+
+</html>
