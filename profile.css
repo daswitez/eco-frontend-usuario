@@ -1,6 +1,7 @@
 /* Variables de colores */
 :root {
   --green-forest: #1e5631;
+  --dark-green: #2e7d32;
   --green-light: #a3d9a5;
   --white: #ffffff;
   --gray-light: #f7f7f7;
@@ -217,4 +218,12 @@ header {
 
 .edit-form .primary-btn:hover {
   background: var(--green-light);
+}
+
+footer {
+  background: var(--dark-green);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
